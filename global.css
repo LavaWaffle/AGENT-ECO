@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Jockey One", sans-serif;
+}
+
+/* controls animations */
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+  }
+}
+
+.rainAnimation {
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  /* z-index: 1; */
+  /* opacity: 0.3; */
+  overflow: scroll;
+  animation: 50s ease-out 0s 15 slideInTop alternate;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

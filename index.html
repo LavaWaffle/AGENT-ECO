@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <script defer src="index.js"></script>
+    <title>Agent Eco</title>
+  </head>
+  <body>
+    <img class="rainAnimation" src="public/Rain.png" />
+    <a
+      href="/resources.html"
+      class="absolute right-5 top-3 text-2xl text-[#D4262F] underline"
+    >
+      Eco Resources
+    </a>
+    <main class="h-screen w-screen bg-[#2D080A]">
+      <!-- separator -->
+      <div class="h-[19%] w-full opacity-0"></div>
+      <div class="flex h-[50%] items-center justify-center">
+        <div
+          class="z-10 flex h-[100%] w-[1000px] flex-col items-center rounded-[100px] border-[10px] border-[#FFCDBC] bg-[#2D080A]"
+        >
+          <!-- separator -->
+          <div class="h-[45px]"></div>
+          <h1
+            class="text-[120px] text-[#FFCDBC] [text-shadow:_8px_8px_0_rgb(245_133_63_/_100%)]"
+          >
+            AGENT ECO
+          </h1>
+          <!-- sep -->
+          <div class="h-[50px]"></div>
+
+          <!-- bar -->
+          <div
+            class="h-[15px] w-[75%] bg-[#65655E] outline outline-2 outline-[#FFCDBC]"
+          >
+            <div id="loadingBar" class="h-[100%] w-[0%] bg-[#F5853F]"></div>
+          </div>
+
+          <!-- sep -->
+          <div class="h-[60px]"></div>
+          <div class="flex w-[80%] items-stretch justify-between">
+            <button
+              id="playButton"
+              class="rounded-xl bg-[#F5853F] px-16 py-4 text-xl text-white"
+            >
+              Play
+            </button>
+            <a
+              href="/rules.html"
+              class="rounded-xl bg-[#EDC700] px-16 py-4 text-xl text-white"
+              >Rules</a
+            >
+            <a
+              href="/exit.html"
+              class="rounded-xl bg-[#6DB1EF] px-16 py-4 text-xl text-white"
+              >Exit</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

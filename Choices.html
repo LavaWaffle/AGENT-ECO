@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <script defer src="./choices.js"></script>
+    <title>Agent Eco</title>
+  </head>
+  <body>
+    <img class="rainAnimation" src="public/Rain.png" />
+
+    <main class="flex h-screen w-screen flex-col items-center bg-[#2D080A]">
+      <div class="h-[10%]"></div>
+      <div class="z-10 h-[70%] w-[80%]">
+        <div class="h-[50px]"></div>
+        <h1 class="bold text-center text-[80px] font-bold text-white">
+          WHAT DO YOU DO?
+        </h1>
+
+        <div
+          class="flex h-[60%] w-full flex-row items-center items-stretch justify-center text-center"
+        >
+          <div
+            id="deduce"
+            class="m-10 flex h-full w-[30%] flex-col items-center justify-center rounded-lg bg-white p-3 transition-all hover:bg-[#F5853F]"
+          >
+            <h1 class="text-[50px]">Investigate the Oil Leak further 🛢️</h1>
+            <h1 class="text-[30px] text-gray-500"></h1>
+          </div>
+          <div
+            id="blackmail"
+            class="m-10 flex flex h-full w-[30%] flex-col items-center items-center justify-center rounded-lg bg-white p-3 transition-all hover:bg-[#F5853F]"
+          >
+            <h1 class="text-[50px]">Blackmail the Oil Company and make 💸</h1>
+          </div>
+          <div
+            id="nothing"
+            class="m-10 flex h-full w-[30%] flex-col items-center justify-center rounded-lg bg-white p-3 transition-all hover:bg-[#F5853F]"
+          >
+            <h1 class="text-[50px]">Do Nothing 😴</h1>
+          </div>
+        </div>
+      </div>
+      <button
+        id="solve"
+        href="guardian.html"
+        class="mt-5 rounded-lg bg-[#F5853F] px-5 py-5 text-4xl"
+      >
+        <h1>Solve</h1>
+      </button>
+      <div class="h-[10%]"></div>
+    </main>
+  </body>
+</html>
