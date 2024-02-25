@@ -29,7 +29,7 @@ document.getElementById("solve").addEventListener("click", () => {
   if (currentSec === "deduce") {
     // send to gaurdian.html
     console.log("deduce");
-    window.location.href = "gaurdian.html";
+    window.location.href = "gaurdianf.html";
   } else if (currentSec === "blackmail") {
     // send to gaurdian.html
     console.log("blackmail");
